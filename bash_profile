@@ -37,7 +37,7 @@ alias scenv='. ~/.profile'
 alias cat='highlight -O ansi'
 alias k='kubectl'
 alias kg='kubectl get'
-alias kex='k explain service'
+alias kex='k explain'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -54,3 +54,5 @@ fi
 # MacPorts Installer addition on 2020-12-27_at_15:52:53: adding an appropriate DISPLAY variable for use with MacPorts.
 export DISPLAY=:0
 # Finished adapting your DISPLAY environment variable for use with MacPorts.
+source <(kubectl completion bash)
+complete -F __start_kubectl k
