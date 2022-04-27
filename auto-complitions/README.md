@@ -1,0 +1,1 @@
+# should be under /etc/bash_completion.d/
