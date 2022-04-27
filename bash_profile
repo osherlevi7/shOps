@@ -37,6 +37,8 @@ alias scenv='. ~/.profile'
 alias cat='highlight -O ansi'
 alias k='kubectl'
 alias kg='kubectl get'
+alias kex='k explain service'
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
