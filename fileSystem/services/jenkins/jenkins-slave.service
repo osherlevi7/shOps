@@ -1,0 +1,13 @@
+#this is a configuration file for /etc/systemd/system/jenkins-slave.service
+[Unit]
+Description=JenkinsSlave
+
+[Service]
+User=userHostName
+WorkingDirectory=/path/to-the-slave/work-dir
+ExecStart=/bin/bash /path/to-the-slave/work-dir/slave.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+~                                    
